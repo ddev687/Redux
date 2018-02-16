@@ -43,20 +43,20 @@ class RegisterComponent extends Component{
                 <View>
                     <Input
                         label={'EmployeeName : '}
-                        value={this.props.EmpName}
-                        onChangeText={(text) => {this.props.NameChanged(text)}}
+                        value={this.state.EmpName}
+                        onChangeText={(text) => {this.setState(text)}}
                     >
                     </Input>
                     <Input
                         label={'EmployeeSalary:'}
-                        value={this.props.EmpSalary}
-                        onChangeText={(text) => {this.props.SalaryChanged(text)}}
+                        value={this.state.EmpSalary}
+                        onChangeText={(text) => {this.setState(text)}}
                     >
                     </Input>
                     <Input
                         label={'EmployeeDesignation:'}
-                        value={this.props.EmpDesignation}
-                        onChangeText={(text) => {this.props.DesiChanged(text)}}
+                        value={this.state.EmpDesignation}
+                        onChangeText={(text) => {this.setState(text)}}
                     >
                     </Input>
                    {/* <Button onPress={() => this.onButtonClick.bind(this)} />*/}

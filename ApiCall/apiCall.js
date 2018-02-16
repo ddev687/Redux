@@ -1,6 +1,6 @@
 import ApioConstant from './ApiConst'
 import axios from 'axios'
-export  function CallApi(url,type='get',data={},header={}) {
+export function CallApi(url,type='get',data={},header={}) {
 
     let reqHeader = Object.assign(header, {"Accept":"application/json", "Content-Type": "application/json"});
 

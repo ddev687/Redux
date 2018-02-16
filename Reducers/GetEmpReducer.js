@@ -1,22 +1,23 @@
 import {GET_DATA} from '../Actions/ActionType';
 
-const INITIAL_STATE = {
-
-    DisplayData:[]
+const INITIAL_STATE =
+{
+    EmpName:'',
+    EmpSalary:'',
+    EmpDesignation:'',
+    select:[]
 };
 
 export default (state=INITIAL_STATE,action) => {
-
-    switch(action.types){
-
+    switch(action.type){
 
         case GET_DATA :{
             console.log('DisplayData',action.payload);
+            debugger;
             return {
-
                 ...state,
-                DisplayData : action.payload,
-            }
+              select:action.payload
+            };
         }
 
          default:{
